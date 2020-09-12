@@ -85,9 +85,9 @@ db.disciplina.deleteOne({ _id: ObjectId("5f5d160c8bfe1eb200550b50") })
 
 
 
-db.nota.updateOne({ nota: 5.0 },
+db.nota.updateOne({ nota: {$lt: 6.0} },
   { $set: { status: "REPROVADO" } }
 )
-db.nota.updateOne({ nota: 6.0 },
-  { $set: { status: "REPROVADO" } }
+db.nota.updateOne({ nota: {$gte: 6.0} },
+  { $set: { status: "APROVADO" } }
 )
