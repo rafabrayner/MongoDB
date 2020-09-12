@@ -13,9 +13,9 @@ Um projeto de banco de dados não convencional para um Sistema de Cadastro e Adm
 * Vá para a pasta raiz do projeto
 * Realize o dump da base de dados:
   * Windows:
-    * mongorestore --db scie --drop ./dump
+    * mongorestore --db scie --drop ./dump/scie
   * Linux:
-    * mongorestore --db scie --username <ROOT_USER> --password <ROOT_PASSWORD> --authenticationDatabase admin --drop ./dump
+    * mongorestore --db scie --username <ROOT_USER> --password <ROOT_PASSWORD> --authenticationDatabase admin --drop ./dump/scie
 
 ## Executando esse projeto
 
